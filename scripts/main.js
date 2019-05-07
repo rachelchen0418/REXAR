@@ -9,11 +9,13 @@ var firebaseConfig = {
   };
   
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
   
+  // 
+var database = firebase.database();
 // Reference Guest Collection
 
-var guestsRef = firebase.database().ref('guests');
+var guestsRef = database.ref('guests');
 
 // Listen for form submit
 
@@ -33,7 +35,7 @@ document.getElementById('checkoutForm').addEventListener('submit', submitForm);
 
       saveGuests(name, email, address, city, state, zip);
 
-
+      console.log("submitted!");
   }
 
 // Function to get form values
@@ -45,8 +47,8 @@ return document.getElementById(id).value;
 // Save guests to firebase
 
 function saveGuests(name, email, address, city, state, zip) {
-    var newGuestRef = guestsRef.push();
-    newGuestRef.set({
+
+    guestsRef.push().set({
         name: name,
         email: email,
         address: address,
