@@ -1,0 +1,15 @@
+nav {
+	background-color: black;
+	color: gold;
+}
+
+body {
+  font-size: .875rem;
+	color: white;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
