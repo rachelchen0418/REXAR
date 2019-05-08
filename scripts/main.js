@@ -25,7 +25,7 @@ document.getElementById('checkoutForm').addEventListener('submit', submitForm);
 // Submit Form
 
   function submitForm(e) {
-      e.preventDefault();
+      //e.preventDefault();
     
       var name = getInputVal('name');
       var email = getInputVal('email');
