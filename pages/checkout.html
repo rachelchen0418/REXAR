@@ -38,7 +38,7 @@
             <a class="nav-link" href="#.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#.html">My Reservations</a>
+            <a class="nav-link" href="./viewReserve.html">My Reservations</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#.html">Our Hotel</a>
@@ -46,7 +46,7 @@
           <li class="nav-item">
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contact Us.html">Contact Us</a>
+            <a class="nav-link" href="./Contact Us.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -64,7 +64,7 @@
 </head>
 <body>
 
-<form id="checkoutForm" action="/action_page.php">
+<form id="checkoutForm" action="./completeReservation.html" method="POST">
   <div class="imgcontainer">
   
   </div>
@@ -126,7 +126,8 @@
              <h7>total due today: </h7>
              <input type="number" id="total" name="total" placeholder="$629.99">
 				   <div class="form-btn">
-             <button type="submit">Complete Reservation</button>
+             <!--<button type="submit">Complete Reservation</button>-->
+             <input type="submit" value="Complete Payment">
                </div>
               </div>
                
