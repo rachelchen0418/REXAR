@@ -10,14 +10,14 @@
     <title>REXAR Hotels</title>
 
     <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/carousel.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/carousel.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Catamaran|Playfair+Display|Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:100|Source+Code+Pro:300" rel="stylesheet">
    
     <!-- Custom styles for this template -->
-    <link href="REXAR.css" rel="stylesheet">
-    <link href="viewRoom.css" rel="stylesheet">
+    <link href="../styles/REXAR.css" rel="stylesheet">
+    <link href="../styles/viewRoom.css" rel="stylesheet">
   </head>
   	<body>
     	<h1>REXAR HOTEL LLC.</h1>
@@ -26,7 +26,7 @@
 
     <div class="bannerContainer">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="index PROJECT 1.html"><img src="updatedLogo.png" width="150" height="100"></a>
+      <a class="navbar-brand" href="index PROJECT 1.html"><img src="../images/updatedLogo.png" width="150" height="100"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,33 +37,34 @@
             <a class="nav-link" href="index PROJECT 1.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">My Reservations</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#">Our Hotel</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./viewReserve.html">My Reservations</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="Contact Us.html">Contact Us</a>
+            <a class="nav-link" href="./Contact Us.html">Contact Us</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-         <a href="login page.html" class="btn btn-info" role="button">Login/Sign Up</a>
+         
         </form>
       </div>
     </nav> 
 </div>
     <main role="main">
 
-<div id="jordan1">
+<div id="rexar">
 <div class="container">
 <h2>currently viewing</h2>
 <div class="row">
          <div class="col-md-6">
           
-          <img id="myImg" src="images/rooms/Deluxe King.jpg" alt="Deluxe King Bed" style="width:100%;max-width:800px">
+          <img id="myImg" src="../images/rooms/Deluxe King.jpg" alt="Deluxe King Bed" style="width:100%;max-width:800px">
+          <br><br>
+          <img id="myImg2" src="../images/dkb room picture 2.jpg" alt="Deluxe King Bed" style="width:100%;max-width:800px">
+           <br><br>
+          <img id="myImg3" src="../images/bathroom-featuring-shower dkb.jpg" alt="Deluxe King Bed" style="width:100%;max-width:300px;">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -100,12 +101,12 @@ span.onclick = function() {
 
           <div class="col-md-6">
            <i class="ion-ios-stopwatch-outline"></i>
-           <h4 class="titlejordan"><strong>Deluxe King Bed</strong></h4>
-           <h5 class="titlejordan2">Price: $499.99 per night<br>
+           <h4 class="dkb"><strong>Deluxe King Bed</strong></h4>
+           <h5 class="dkb">Price: $499.99 per night<br>
              <br>
            </h5>
            <h6>Customer Rating: &#9733;&#9733;&#9733;&#9733;&#9733;</h6>
-           <blockquote cite="https://www.nike.com/launch/t/air-jordan-1-shadow"><p class="shoedes">Room Amenities: <br> 
+           <blockquote><p class="room">Room Amenities: <br> 
         <ul>
            <li> Hairdryer </li>
            <li> Safe </li>
@@ -136,12 +137,14 @@ Newly-renovated, spacious studio-styled room featuring Tempur-Pedic King Bed wit
                 <select class="custom-select d-block w-100" id="Size" required>
                   <option>1</option>
                   <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
                 </select>
                
               </div>
               <br>
            <form class="form-inline my-2 my-lg-0">
-         <a href="checkout.html" class="btn btn-info" role="button">Book Room Now!</a>
+         <a href="./checkout.html" class="btn btn-info" role="button">Book Room Now!</a>
         </form>
           </div>
 	</div>
@@ -163,16 +166,13 @@ Newly-renovated, spacious studio-styled room featuring Tempur-Pedic King Bed wit
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#">About-Us</a>
+                        <a href="#">Our Hotel</a>
                     </li>
                     <li>
-                        <a href="#">My Reservations</a>
+                        <a href="./viewReserve.html">My Reservations</a>
                     </li>
                     <li>
-                        <a href="upcoming.html">Our Hotel</a>
-                    </li>
-                    <li>
-                    	<a href="Contact Us.html">Contact Us</a>
+                    	<a href="./Contact Us.html">Contact Us</a>
                     </li>
                 </ul>
             </div>  

@@ -9,7 +9,21 @@
   transition: 0.3s;
 }
 
+#myImg2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg3{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 #myImg:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -54,6 +68,7 @@
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)} 

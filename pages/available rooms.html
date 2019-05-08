@@ -36,7 +36,7 @@
             <a class="nav-link" href="/index PROJECT 1.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Our Hotel</a>
+            <a class="nav-link" href="../ourhotel.html">Our Hotel</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../pages/viewReserve.html">My Reservations<span class="sr-only">(current)</span></a>
@@ -49,99 +49,106 @@
     </nav> 
 </div>
     <main role="main">
-
-<div id="rooms">
-<div class="container">
-  <h2>Available rooms</h2>
-  <div class="row-fluid">
-  <div class="col-md-6">
-  <img class="room1" src="../images/rooms/Deluxe King.jpg" alt="room1" width="500" height="200" ></div>
-
-  <div class="col-md-6">
-    <h3><a href="../pages/viewRoom.html">deluxe king bed</a></h3>
-    <br>
-    Spacious studio-styled room featuring King Bed accommodations and deluxe amenities, with a great view overlooking Lexington Avenue. </div>
-</div>
-
-<div class="row-fluid">
-  <div class="col-md-6">
-  <img class="room2" src="../images/rooms/deluxe bed.png" alt="room2" width="500" height="200"></div>
-  
-  <div class="col-md-6"><h3>Deluxe Queen Bed</h3>
-
-<br>
-Our spacious and newly renvoated room with a Queen Bed offers a great living space with great Deluxe Queen Bed accommodations and deluxe amenities.
-</div>
-</div>
-
-<div class="row-fluid">
-  <div class="col-md-6">
-  <img class="room3" src="../images/rooms/KING BED.jpg" alt="room3" width="500" height="200"></div>
-  
-  <div class="col-md-6">
-    <h3>King bed</h3>
-    <br>
-This comfortable room features Tempur-Pedic King bed accommodations and our standard amenities in the heart of Lexington Avenue.</div>
-</div>
-
-<div class="row-fluid">
-  <div class="col-md-6">
-  <img class="room4" src="../images/rooms/queen bed.jpg" alt="room3" width="500" height="200"></div>
-  
-  <div class="col-md-6">
-    <h3>Queen bed</h3>
-
-<br>
-
-This comfortable room features Tempur-Pedic Queen bed accommodations and our standard amenities in the heart of Lexington Avenue.</div>
-</div>
-
-<div class="row-fluid">
-  <div class="col-md-6">
-  <img class="room5" src="../images/rooms/twins.jpg" alt="room3" width="500" height="200"></div>
-  
-  <div class="col-md-6">
-    <h3>Twin beds</h3>
-
-<br>
-
-This comfortable room offers two Queen bed accommodations in the heart of Lexington Avenue.</div>
-</div>
-</div>
-</div>
-</body>
-
-<!--Footer Links-->
-<footer class="page-footer font-small blue pt-4 mt-4">
-
-    <!--Footer Links-->
-    <div class="container text-center text-md-left">
-        <div class="row">
-               <div class="col-md-6">
-                <h5 class="text-uppercase">About Us</h5>
-                <p>REXAR Hotel is a prominent property management company fostering a fully-computerized reservation system to store and retrieve booking information details directly through our reservations system. REXAR provides a functional and automated hotel reservation process that makes it simple to book rooms for our customers and help our hotel keep better track of the reservations. We offer an easy, no-hassle booking process. </p>
-               </div>
-               <div class="col-md-6">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Our Hotel</a>
-                    </li>
-                    <li>
-                        <a href="../pages/viewReserve.html">My Reservations</a>
-                    </li>
-                    <li>
-                    	<a href="../pages/Contact Us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>  
+      <div id="rooms">
+        <div class="container">
+          <h2>Available rooms</h2>
+          <div class="row-fluid">
+          <div class="col-md-6">
+          <img class="room1" src="../images/rooms/Deluxe King.jpg" alt="room1" width="500" height="200" ></div>
+        
+          <div class="col-md-6">
+            <h3><a href="./viewRoom.html">deluxe king bed</a></h3>
+            Spacious studio-styled room featuring King Bed accommodations and deluxe amenities, with a great view overlooking Lexington Avenue.<br>
+            <label for="dk"><h6>Number of rooms available: </h6></label><br>
+            <input type="number" id="dk" name="amountavailable" placeholder="0">
+             </div>
+            
         </div>
-    </div>
-    <div class="footer-copyright py-3 text-center">
-       Rexar Hotel LLC &copy; 2019 All Rights Reserved 
-	</div>
-
-</footer>
-<!--/.Footer-->
-
-</html>
+        
+        <div class="row-fluid">
+          <div class="col-md-6">
+          <img class="room2" src="../images/rooms/deluxe bed.png" alt="room2" width="500" height="200"></div>
+          
+          <div class="col-md-6">
+            <h3><a href="./viewRoom.html">Deluxe Queen Bed</a></h3>
+        Our spacious and newly renovated room with a Queen Bed offers a great living space with great Deluxe Queen Bed accommodations and deluxe amenities.<br>
+            <label for="dq"><h6>Number of rooms available: </h6></label><br>
+            <input type="number" id="dq" name="amountavailable" placeholder="0">
+        </div>
+        </div>
+        
+        <div class="row-fluid">
+          <div class="col-md-6">
+          <img class="room3" src="../images/rooms/KING BED.jpg" alt="room3" width="500" height="200"></div>
+          
+          <div class="col-md-6">
+            <h3><a href="./viewRoom.html">King bed</a></h3>
+        This comfortable room features Tempur-Pedic King bed accommodations and our standard amenities in the heart of Lexington Avenue.<br>
+            <label for="king"><h6>Number of rooms available: </h6></label><br>
+            <input type="number" id="king" name="amountavailable" placeholder="0">
+            </div>
+        </div>
+        
+        <div class="row-fluid">
+          <div class="col-md-6">
+          <img class="room4" src="../images/rooms/queen bed.jpg" alt="room3" width="500" height="200"></div>
+          
+          <div class="col-md-6">
+            <h3><a href="./viewRoom.html">Queen bed</a></h3>
+        This comfortable room features Tempur-Pedic Queen bed accommodations and our standard amenities in the heart of Lexington Avenue.<br>
+            <label for="queen"><h6>Number of rooms available: </h6></label><br>
+            <input type="number" id="queen" name="amountavailable" placeholder="0">
+            </div>
+        </div>
+        
+        <div class="row-fluid">
+          <div class="col-md-6">
+          <img class="room5" src="../images/rooms/twins.jpg" alt="room3" width="500" height="200"></div>
+          
+          <div class="col-md-6">
+            <h3><a href="./viewRoom.html">Twin beds</a></h3>
+        This comfortable room offers two Queen bed accommodations in the heart of Lexington Avenue.<br>
+            <label for="amount"><h6>Number of rooms available: </h6></label><br>
+            <input type="number" id="amount" name="amountavailable" placeholder="0"></div>
+        </div>
+        </div>
+        </div>
+        </body>
+        
+        <!--Footer Links-->
+        <footer class="page-footer font-small blue pt-4 mt-4">
+        
+            <!--Footer Links-->
+            <div class="container text-center text-md-left">
+                <div class="row">
+                       <div class="col-md-6">
+                        <h5 class="text-uppercase">About Us</h5>
+                        <p>REXAR Hotel is a prominent property management company fostering a fully-computerized reservation system to store and retrieve booking information details directly through our reservations system. REXAR provides a functional and automated hotel reservation process that makes it simple to book rooms for our customers and help our hotel keep better track of the reservations. We offer an easy, no-hassle booking process. </p>
+                       </div>
+                       <div class="col-md-6">
+                        <h5 class="text-uppercase">Links</h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">About-Us</a>
+                            </li>
+                            <li>
+                                <a href="./viewReserve.html">My Reservations</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Hotel</a>
+                            </li>
+                            <li>
+                              <a href="./Contact Us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+            <div class="footer-copyright py-3 text-center">
+               Rexar Hotel LLC &copy; 2019 All Rights Reserved 
+          </div>
+        
+        </footer>
+        <!--/.Footer-->
+        
+        </html>

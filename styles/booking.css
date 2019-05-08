@@ -24,7 +24,7 @@ img {
 #booking {
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 3px;
-	background-image: url(images/hotel1.jpg);
+	background-image: url(../images/hotel1.jpg);
 	background-size: cover;
 	background-position: center;
 }

@@ -16,6 +16,7 @@ var database = firebase.database();
 // Reference Guest Collection
 
 var guestsRef = database.ref('guests');
+var reservationsRef = database.ref('reservations');
 
 // Listen for form submit
 
@@ -32,8 +33,14 @@ document.getElementById('checkoutForm').addEventListener('submit', submitForm);
       var city = getInputVal('city');
       var state = getInputVal('state');
       var zip = getInputVal('zip');
+      var rate = "$499.99";
+      var totalNights = "1";
+      var fee = "$130";
+      var total = "$629.99";
+
 
       saveGuests(name, email, address, city, state, zip);
+      saveReservations(rate, totalNights, fee, total);
 
       console.log("submitted!");
   }
@@ -56,4 +63,14 @@ function saveGuests(name, email, address, city, state, zip) {
         state: state,
         zip: zip
     });
+}
+
+function saveReservations(rate, totalNights, fee, total) {
+
+  reservationsRef.push().set({
+    rate: rate, 
+    totalNights: totalNights, 
+    fee: fee, 
+    total: total
+  });
 }

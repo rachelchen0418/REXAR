@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="../bootstrap-4.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../styles/REXAR.css" rel="stylesheet">
+    <link href="../styles/viewReserve.css" rel="stylesheet">
     <link href="../styles/checkout.css" rel="stylesheet">
 
 
@@ -63,74 +64,78 @@
 </head>
 <body>
 
-<form id="checkoutForm">
+<form id="checkoutForm" action="/action_page.php">
   <div class="imgcontainer">
   
   </div>
-
-  <div class="container">
-    <label for="roomtype"><b>Location: Lexington Ave</b></label><br>
-    <label for="roomtype"><b>Check in: 5/8/19</b></label><br>
-    <label for="roomtype"><b>Check out: 5/9/19</b></label><br>
-    <label for="roomtype"><b>Room Type: Delux King Bed</b></label><br>
-    <label for="uname"><b>Guest Name</b></label>
-    <input type="text" id="name" placeholder="Enter Full Name" name="uname" required>
-
-    
-	  <label for="email"><i class="fa fa-envelope"></i><b>Email</b></label>
-      <input type="text" id="email" name="email" placeholder="john@example.com">
-       
-       <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-            <input type="text" id="address" name="address" placeholder="542 W. 15th Street">
-            <label for="city"><i class="fa fa-institution"></i> City</label>
-            <input type="text" id="city" name="city" placeholder="New York">
-            
-            <div class="row">
-              <div class="col-50">
-                <label for="state">State</label>
-                <input type="text" id="state" name="state" placeholder="NY">
+        <div id="checkout">
+              <div class="row">
+              <div class="col-md-6">
+              <h5 class="text-uppercase">customer information</h5>
+				  <label for="uname">Guest Name*</label>
+				  <input type="text" id="name" placeholder="Enter Full Name" name="uname" required>
+				  <input type="text" id="email" name="email" placeholder="john@example.com" required>
+          <label for="adr">
+           <i class="fa fa-address-card-o"></i>Address*</label>
+           <input type="text" id="address" name="address" placeholder="542 W. 15th Street" required>
+           <label for="city"><i class="fa fa-institution"></i> City</label>
+           <input type="text" id="city" name="city" placeholder="New York" required>
+             <div class="row">
+               <div class="col-50">
+               <label for="state">State*</label>
+               <input type="text" id="state" name="state" placeholder="NY" required>
+               </div>
+               <div class="col-50">
+               <label for="zip">Zip*</label>
+               <input type="text" id="zip" name="zip" placeholder="10001" required>
+               </div>
+               </div>
+               <h3>Payment</h3>
+               <h4><i>Accepted Cards</i></h4>
+               <div class="icon-container">
+               <h5>
+               <a href="http://www.mlslistingcompanies.com">
+               <img alt="flat fee mls" title="sell your home" src="http://www.free-credit-card-logos.com/paypal_mc_visa_amex_disc_echeck_253x80.gif" width="253" height="80" border="0" /></a></h5>
+               </div>
+               <label for="cname">Name on Card*</label>
+               <input type="text" id="cardName" name="cardname" placeholder="John More Doe">
+               <label for="ccnum">Credit Card number*</label>
+               <input type="text" id="cardNumber" name="cardnumber" placeholder="1111-2222-3333-4444">
+               <label for="expmonth">Exp Month*</label>
+               <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+               <div class="row">
+               <div class="col-50">
+               <label for="expyear">Exp Year*</label>
+               <input type="text" id="expyear" name="expyear" placeholder="2019">
+               </div>
+               <div class="col-50">
+               <label for="cvv">CVV*</label>
+               <input type="text" id="cvv" name="cvv" placeholder="111">
+               </div>
+               </div>  
+               </div>
+               <div class="col-md-6">
+               <h5 class="text-uppercase">total due</h5>
+				   <div class="container">
+             <h7>rate per night:</h7>
+             <input type="number" id="rate" name="rpn" placeholder="$499.99">
+             <h7>number of nights: </h7>
+             <input type="number" id="totalnights" name="tnights" placeholder="1">
+             <h7>service fee: </h7>
+             <input type="number" id="fee" name="fee" placeholder="$130">
+             <h7>total due today: </h7>
+             <input type="number" id="total" name="total" placeholder="$629.99">
+				   <div class="form-btn">
+             <button type="submit">Complete Reservation</button>
+               </div>
               </div>
-              <div class="col-50">
-                <label for="zip">Zip</label>
-                <input type="text" id="zip" name="zip" placeholder="10001">
-              </div>
-            </div>
-          </div>
-          <button type="submit">Complete Reservation</button>
-<!--
-          <div class="col-50">
-            <h3>Payment</h3>
-            
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-            <div class="row">
-              <div class="col-50">
-                <label for="expyear">Exp Year</label>
-                <input type="text" id="expyear" name="expyear" placeholder="2019">
-              </div>
-              <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="332">
-              </div>
-            </div>
-          </div>
-       
-     -->   
-    
-<br>
-</form>
-<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
-<script src="../scripts/main.js"></script>
-</body>
+               
+               </div>
+               </div>
+	</div></form>
     
 <footer class="page-footer font-small blue pt-4 mt-4">
 
-    <!--Footer Links-->
     <div class="container text-center text-md-left">
         <div class="row">
                <div class="col-md-6">
@@ -144,7 +149,7 @@
                         <a href="#">About-Us</a>
                     </li>
                     <li>
-                        <a href="#">My Reservations</a>
+                        <a href="./viewReserve.html">My Reservations</a>
                     </li>
                     <li>
                         <a href="#">Our Hotel</a>
@@ -162,4 +167,10 @@
 
 </footer>
 
+
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-database.js"></script>
+<script src="../scripts/main.js"></script>
+
+</body>
 </html>
